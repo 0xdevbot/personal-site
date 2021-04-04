@@ -43,12 +43,8 @@ const HeaderOne = () => {
       <Container fluid>
         <Row className="justify-content-between">
           <Col className="col-6" lg={2} md={3} sm={3}>
-            <div className="logo">
-              <Link href="/">
-                <a>
-                  <img src={LogoImage.light} alt="" />
-                </a>
-              </Link>
+            <div>
+              <h1 style={{color: "white"}}>Orion Wallace</h1>
             </div>
           </Col>
           <Col lg={8} sm={8} md={7} className="d-none d-lg-block ">

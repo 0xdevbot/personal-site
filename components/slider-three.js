@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, EffectFade } from "swiper";
 import { Col, Container, Row } from "react-bootstrap";
 import { SliderThreeData } from "@/data";
+import image1 from "assets/images/home_1/pexels-startup-stock-photos-7367.jpg";
 SwiperCore.use([Autoplay, Navigation, EffectFade]);
 
 const SliderThree = () => {
@@ -23,25 +24,24 @@ const SliderThree = () => {
     <section className="main-slider">
       <Swiper {...mainSlideOptions}>
         {SliderThreeData.map(({ image, subTitle, title, button }, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="image-layer"
-              style={{ backgroundImage: `url(${image})` }}
-            ></div>
-            <Container>
-              <Row>
-                <Col lg={12} className="text-center">
-                  <p className="main-slider__subtext">{subTitle}</p>
-                  <h3 className="main-slider__title">{title}</h3>
-                  <Link href={button.url}>
-                    <a className={`common_btn`}>
-                      <span>{button.label}</span>
-                    </a>
-                  </Link>
-                </Col>
-              </Row>
-            </Container>
-          </SwiperSlide>
+            <SwiperSlide key={index}>
+              <div
+                  className="image-layer"
+                  style={{ backgroundImage: `url(${image})` }}
+              ></div>
+              <Container>
+                <Row>
+                  <Col lg={12} className="text-center">
+                    <h3 className="main-slider__title">{title}</h3>
+                    <Link href={button.url}>
+                      <a className={`common_btn`}>
+                        <span>{button.label}</span>
+                      </a>
+                    </Link>
+                  </Col>
+                </Row>
+              </Container>
+            </SwiperSlide>
         ))}
         <div className="swiper-button-prev" id="main-slider-prev">
           <i className="fa fa-angle-left"></i>
@@ -50,6 +50,35 @@ const SliderThree = () => {
           <i className="fa fa-angle-right"></i>
         </div>
       </Swiper>
+      {/*<Swiper {...mainSlideOptions}>*/}
+      {/*  {SliderThreeData.map(({ image, subTitle, title, button }, index) => (*/}
+      {/*    <SwiperSlide key={index}>*/}
+      {/*      <div*/}
+      {/*        className="image-layer"*/}
+      {/*        style={{ backgroundImage: `url(${image})` }}*/}
+      {/*      ></div>*/}
+      {/*      <Container>*/}
+      {/*        <Row>*/}
+      {/*          <Col lg={12} className="text-center">*/}
+      {/*            <p className="main-slider__subtext">{subTitle}</p>*/}
+      {/*            <h3 className="main-slider__title">{title}</h3>*/}
+      {/*            <Link href={button.url}>*/}
+      {/*              <a className={`common_btn`}>*/}
+      {/*                <span>{button.label}</span>*/}
+      {/*              </a>*/}
+      {/*            </Link>*/}
+      {/*          </Col>*/}
+      {/*        </Row>*/}
+      {/*      </Container>*/}
+      {/*    </SwiperSlide>*/}
+      {/*  ))}*/}
+      {/*  <div className="swiper-button-prev" id="main-slider-prev">*/}
+      {/*    <i className="fa fa-angle-left"></i>*/}
+      {/*  </div>*/}
+      {/*  <div className="swiper-button-next" id="main-slider-next">*/}
+      {/*    <i className="fa fa-angle-right"></i>*/}
+      {/*  </div>*/}
+      {/*</Swiper>*/}
     </section>
   );
 };

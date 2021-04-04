@@ -9,14 +9,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-5 col-sm-6 col-md-5">
             <aside className="widget aboutwidget">
-              <a href="/">
-                <img src={light} alt="" />
-              </a>
+              <h1 style={{color: "White"}}>Orion Wallace</h1>
               <p>
-                Welcome to our web design agency. Lorem ipsum is simply free
-                text dolor sit amet consectetur adipisicing elit. Tempore
-                corrupti temporibus fuga earum asperiores, alias excepturi sit
-                mpedit fugit laudantium.
+                Software developer, Cyber-Security Analyst, and AI enthusiast
               </p>
             </aside>
           </div>
@@ -24,13 +19,12 @@ const Footer = () => {
             <aside className="widget contact_widgets">
               <h3 className="widget_title">contact</h3>
               <p>
-                66 Broklyn Street, New York
+                Bloomington, IL
                 <br />
                 United States of America
               </p>
-              <p>P: 666 888 000</p>
               <p>
-                E: <a href="#">needhelp@meipaly.com</a>
+                E: <a href="#">devinwallace@protonmail.com</a>
               </p>
             </aside>
           </div>
@@ -39,13 +33,8 @@ const Footer = () => {
               <h3 className="widget_title">social</h3>
               <ul>
                 <li>
-                  <a href="#">
-                    <i className="fa fa-twitter"></i>Twitter
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-facebook-square"></i>Facebook
+                  <a href="https://github.com/Devin-Wallace">
+                    <i className="fa fa-github"></i>Github
                   </a>
                 </li>
                 <li>
@@ -55,14 +44,6 @@ const Footer = () => {
                 </li>
               </ul>
             </aside>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-12 col-sm-12 text-center">
-            <div className="copyright">
-              © copyright {new Date().getFullYear()} by{" "}
-              <a href="#">Layerdrops.com</a>
-            </div>
           </div>
         </div>
       </div>

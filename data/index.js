@@ -9,75 +9,29 @@ export const LogoImage = {
 export const NavLinks = [
   {
     name: "Home",
-    url: "/",
-    subItems: [
-      {
-        name: "Home 01",
-        url: "/"
-      },
-      {
-        name: "Home 02",
-        url: "/index-2"
-      },
-      {
-        name: "Home 03",
-        url: "/index-3"
-      }
-    ]
-  },
-  {
-    name: "About",
-    url: "/about"
-  },
-  {
-    name: "Services",
-    url: "/service",
-    subItems: [
-      {
-        name: "Services",
-        url: "/service"
-      },
-      {
-        name: "Service Details",
-        url: "/service-details"
-      }
-    ]
+    url: "/index-3",
   },
   {
     name: "Portfolio",
     url: "/portfolio",
     subItems: [
       {
-        name: "Portfolio 01",
+        name: "See All Projects",
         url: "/portfolio"
       },
       {
-        name: "Portfolio Details",
+        name: "Sort by Technologies",
         url: "/portfolio-details"
       }
     ]
   },
   {
-    name: "Blog",
-    url: "/blog",
-    subItems: [
-      {
-        name: "Blog 01",
-        url: "/blog"
-      },
-      {
-        name: "Blog 02",
-        url: "/blog-2"
-      },
-      {
-        name: "Blog 03",
-        url: "/blog-3"
-      },
-      {
-        name: "Blog Details",
-        url: "/blog-single"
-      }
-    ]
+    name: "Resume",
+    url: "/service",
+  },
+  {
+    name: "About",
+    url: "/about"
   },
   {
     name: "Contact",
@@ -144,25 +98,25 @@ export const SliderTwoData = [
 ];
 
 import sliderThree01 from "@/images/slider/3_1.jpg";
-import sliderThree02 from "@/images/slider/3_2.jpg";
+import sliderImage02 from "@/images/slider/3_2.jpg";
+import sliderImage01 from "assets/images/home_1/pexels-startup-stock-photos-7367.jpg";
+
 
 export const SliderThreeData = [
   {
-    image: sliderThree01,
-    subTitle: "WELCOME TO MEIPALY AGENCY",
-    title: "SMART WEB\n DESIGN AGENCY.",
+    image: sliderImage01,
+    title: "Keeping Skills up to date",
     button: {
-      label: "DISCOVER MORE",
+      label: "Coding Challenge Solutions",
       url: "/about"
     }
   },
   {
-    image: sliderThree02,
-    subTitle: "WELCOME TO MEIPALY AGENCY",
-    title: "SMART WEB\n DESIGN AGENCY.",
+    image: sliderImage02,
+    title: "Explore My Code",
     button: {
-      label: "DISCOVER MORE",
-      url: "/about"
+      label: "Portfolio",
+      url: "/portfolio"
     }
   }
 ];
